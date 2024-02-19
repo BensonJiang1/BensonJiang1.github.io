@@ -1,4 +1,5 @@
 import { styles } from "../styles";
+import { react } from "../assets";
 
 const Hero = () => {
   return (
@@ -13,13 +14,20 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#EE1D52]'>Benson</span>
+            Hello, I'm <span className='text-[#EE1D52]'>Benson</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop 3D games <br className='sm:block hidden' />
-            and web applications
+            and models
           </p>
         </div>
+
+        <div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, necessitatibus?
+          </p>
+          <img src={react}/>
+          </div>
       </div>
 
       

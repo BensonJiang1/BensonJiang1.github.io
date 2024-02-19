@@ -75,6 +75,48 @@ const projects = [
     image: drawing,
     source_code_link: "https://github.com/BensonJiang1/DrawingGameTemplate",
   },
+  {
+    name: "Omniscia",
+    description:
+      "A flashcard and game based learning system",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: drawing,
+    source_code_link: "https://github.com/BensonJiang1/omniscia",
+  },
+  {
+    name: "Global Chat",
+    description:
+      "A real time chat with automatic text translation to connect people around the world",
+    tags: [
+      {
+        name: "Svelte",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Google API",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: drawing,
+    source_code_link: "https://github.com/Seth-Lupo/global-chat",
+  },
   
 ];
 

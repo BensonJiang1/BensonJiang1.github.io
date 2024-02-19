@@ -6,6 +6,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import drawing from "./drawingGame.jpg";
+import react from "./react-1-logo-png-transparent.png"
 
 export {
   backend,
@@ -14,5 +15,6 @@ export {
   github,
   menu,
   close,
-  drawing
+  drawing,
+  react
 };
