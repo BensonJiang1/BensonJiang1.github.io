@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Benson's Portfolio</title>
+        <style>
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+                cursor: url('images/cursor.png'), auto;
+                }
+
+                body {
+                background: #f5f5f5;
+                
+                }
+
+                .navbar {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: rgba(255, 255, 255, 0.7);
+                backdrop-filter: blur(10px);
+                padding: 15px 20px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+                }
+
+                .logo {
+                font-size: 24px;
+                font-weight: 500;
+                color: #333;
+                }
+
+                .nav-links {
+                list-style: none;
+                display: flex;
+                }
+
+                .nav-links li {
+                margin: 0 15px;
+                }
+
+                .nav-links a {
+                text-decoration: none;
+                color: #333;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 5px 10px;
+                transition: 0.3s;
+                }
+
+                .nav-links a:hover {
+                color: #007bff;
+                border-bottom: 2px solid #007bff;
+                }
+                .menu-toggle {
+                display: none;
+                font-size: 26px;
+                cursor: pointer;
+                }
+
+                .channel-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 100px; 
+                    gap: 20px;
+                    padding: 20px;
+                    justify-content: center;
+                }
+
+                .channel-card img {
+                    width: 100%;
+                    height: 200px; /* Set a fixed height */
+                    object-fit: cover; /* Ensures the image fills the space while clipping */
+                    border-radius: 10px;
+                }
+
+
+                .channel-card {
+                    background: white;
+                    padding: 15px;
+                    border-radius: 10px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+                    text-align: center;
+                    width: 250px;
+                    border: 3px solid transparent; /* Set initial border to transparent */
+                }
+
+                .channel-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+                    border-color: #add8e6; /* Light blue border */
+                }
+
+                .channel-card h3 {
+                    margin-top: 10px;
+                    font-size: 18px;
+                    color: #333;
+                }
+
+                .channel-card p {
+                    font-size: 14px;
+                    color: #777;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+
+                /* Mobile Styles */
+                @media (max-width: 768px) {
+                .nav-links {
+                        display: none;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 60px;
+                        right: 20px;
+                        background: white;
+                        width: 150px;
+                        text-align: center;
+                        border-radius: 10px;
+                        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                }
+
+                .nav-links.active {
+                        display: flex;
+                }
+
+                .nav-links li {
+                        padding: 10px 0;
+                }
+
+                .menu-toggle {
+                        display: block;
+                }
+                }
+        </style>
+        <script src="home.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Benson's Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="https://github.com/BensonJiang1" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/benson-jiang-4b92b1233/" target="_blank">LinkedIn</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+
+    <div class="channel-container">
+        <a href="about.html">
+            <div class="channel-card">
+                <img src="images/mii.png" alt="Channel 1">
+                <h3>MII</h3>
+            </div>
+        </a>
+        
+    
+        <a href="project.html">
+            <div class="channel-card">
+                <img src="images/rob.png" alt="Channel 2">
+                <h3>Projects</h3>
+            </div>
+        </a>
+        
+    
+        <a href="paper.html">
+            <div class="channel-card">
+                <img src="images/paper.png" alt="Channel 3">
+                <h3>Research Papers</h3>
+            </div>
+        </a>
+        
+
+        <div class="channel-card">
+            <img src="images/construct.jpg" alt="Channel 4">
+            <h3>Under Construction</h3>
+        </div>
+    </div>
+    
+</body>
+</html>

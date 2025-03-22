@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benson's Projects</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Body and general layout */
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Container for sidebar and content */
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .heading {
+            margin: 20px 0px;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            color: #d3d3d3;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            color: #d3d3d3;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .sidebar ul li a:hover{
+            color: #98d4e8;
+        }
+
+        /* Content area styles */
+        .content {
+            flex: 1;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar .header {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar .header img {
+            width: 150px; /* Fixed width */
+            height: 150px; /* Fixed height */
+            object-fit: contain; /* Preserve aspect ratio */
+            overflow: visible; /* Allow image to overflow outside of container */
+            display: block; /* Ensure it behaves as a block element */
+            margin: 0 auto; /* Center the image */
+        }
+
+        /* Section styles */
+        .content section {
+            margin-bottom: 40px;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #555;
+        }
+
+
+        /* Demo Styles */
+        .demo-pics {
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .demo-pics img {
+            width: 30%; /* Ensures images are evenly spaced */
+            height: 100%;
+            object-fit: contain; /* Maintains aspect ratio without distortion */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="header">
+                <a href="index.html"><img src="images/rob.png" alt="Logo"></a>
+                <h1>Projects</h1>
+            </div>
+            <ul>
+                <li><a onclick="loadProject('project1')">GPTGreen</a></li>
+                <li><a onclick="loadProject('project2')">Image Compression</a></li>
+                <li><a onclick="loadProject('project3')">Global Chat</a></li>
+                <li><a onclick="loadProject('project4')">ASL Recognition</a></li>
+                <li><a>...</a></li>
+                <!-- Add more projects as needed -->
+            </ul>
+        </aside>
+        <main class="content" id="content">
+            <section id="project1">
+                <h1 >GPTGreen</h1>
+                <h2 class="heading">Description: </h2>
+                <p>&nbsp;&nbsp;&nbsp; GPTGreen is a project that aims to quantify and visualize the energy consumption of GPT models. The project tracks the number of tokens that GPT produces during output and counts the input tokens as well. Using this data, it calculates the energy required for each token in Joules, offering insight into the environmental impact of AI models. The energy consumption is then displayed live within the GPT interface, allowing users to see the real-time energy cost of generating text. This initiative raises awareness of the energy footprint of AI systems and encourages more sustainable practices in AI model usage.</p>
+
+                <h2 class="heading">Pictures: </h2>
+                <div class="demo-pics">
+                    <img src="/images/jumbo.jpg" alt="">
+                </div>
+
+                <h2 class="heading">Link: </h2>
+                <a href="https://github.com/IsaacSaland/JumboHack2025">GPTGreen</a>
+            </section>
+
+            <section id="project2" style="display: none;">
+                <h1 >Image Compression</h1>
+                <h2 class="heading">Description: </h2>
+                <p>&nbsp;&nbsp;&nbsp;This project focuses on an image compression technique where the image is initially converted from RGB (Red, Green, Blue) color space to a more efficient representation using CV (Color Vectorization). The image is then transformed into the Discrete Cosine Transform (DCT) domain to further compress the data. The project also includes a reversal process where the compressed image is transformed back, going through the DCT to CV, and then back to the original RGB color space. This method reduces the file size while maintaining image quality, offering an efficient approach for storing and transmitting images.</p>
+
+                <h2 class="heading">Pictures: </h2>
+                <div class="demo-pics">
+                    <img src="/images/flowers.jpg" alt="">
+                    <img src="/images/erosion.jpg" alt="">
+                    <img src="/images/animals.jpg" alt="">
+                </div>
+
+                <h2 class="heading">Link: </h2>
+                <a href="https://github.com/BensonJiang1/Image_Compression">Image Compression</a>
+            </section>
+
+            <section id="project3" style="display: none;">
+                <h2>Global Chat</h2>
+                <h2 class="heading">Description: </h2>
+                <p>&nbsp;&nbsp;&nbsp;This project focuses on an image compression technique where the image is initially converted from RGB (Red, Green, Blue) color space to a more efficient representation using CV (Color Vectorization). The image is then transformed into the Discrete Cosine Transform (DCT) domain to further compress the data. The project also includes a reversal process where the compressed image is transformed back, going through the DCT to CV, and then back to the original RGB color space. This method reduces the file size while maintaining image quality, offering an efficient approach for storing and transmitting images.</p>
+
+                <h2 class="heading">Pictures: </h2>
+                <div class="demo-pics">
+                    <img src="/images/youngstudents (2).jpg" alt="">
+                    <img src="/images/map.jpg" alt="">
+                    <img src="/images/userProfile.jpg" alt="">
+                </div>
+
+                <h2 class="heading">Link: </h2>
+                <a href="https://github.com/Seth-Lupo/global-chat">Global Chat</a>
+            </section>
+
+            <section id="project4" style="display: none;">
+                <h2>ASL Recognition</h2>
+                <h2 class="heading">Description: </h2>
+                <p>&nbsp;&nbsp;&nbsp;This project is an American Sign Language (ASL) recognition system that leverages computer vision and machine learning to classify both static and dynamic ASL characters. It utilizes Mediapipe to extract hand landmarks from video frames and Keras to train a Multi-Layer Perceptron (MLP) network for classification. The model can recognize static gestures as well as dynamic signs like 'J' and 'Z,' enhancing accessibility for ASL users. This project demonstrates the potential of AI-driven gesture recognition for real-time communication and assistive technologies.</p>
+
+                <h2 class="heading">Pictures: </h2>
+                <div class="demo-pics">
+                </div>
+
+                <h2 class="heading">Link: </h2>
+                <a href="https://github.com/BensonJiang1/ASL_Recognition">ASL Recognition</a>
+            </section>
+            
+
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Benson. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function loadProject(projectId) {
+            // Hide all project sections
+            const sections = document.querySelectorAll('.content section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected project
+            const selectedProject = document.getElementById(projectId);
+            if (selectedProject) {
+                selectedProject.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

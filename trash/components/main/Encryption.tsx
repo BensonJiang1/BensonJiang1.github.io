@@ -15,7 +15,7 @@ const Encryption = () => {
         >
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
             {" "}
-            Secure Applications{" "}
+            Cybersecurity{" "}
           </span>
         </motion.div>
       </div>
@@ -39,7 +39,7 @@ const Encryption = () => {
         </div>
 
         <div className="Welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9]">
-          <h1 className="Welcome-text text-[12px]">HTTPS</h1>
+          <h1 className="Welcome-text text-[12px]">Puzzle Somewhere ;)</h1>
         </div>
       </div>
 

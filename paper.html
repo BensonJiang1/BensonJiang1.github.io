@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benson's Projects</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Body and general layout */
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Container for sidebar and content */
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .heading {
+            margin: 20px 0px;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            color: #d3d3d3;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            color: #d3d3d3;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .sidebar ul li a:hover{
+            color: #98d4e8;
+        }
+
+        /* Content area styles */
+        .content {
+            flex: 1;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar .header {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar .header img {
+            width: 150px; /* Fixed width */
+            height: 150px; /* Fixed height */
+            object-fit: contain; /* Preserve aspect ratio */
+            overflow: visible; /* Allow image to overflow outside of container */
+            display: block; /* Ensure it behaves as a block element */
+            margin: 0 auto; /* Center the image */
+        }
+
+        /* Section styles */
+        .content section {
+            margin-bottom: 40px;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #555;
+        }
+
+
+        /* Demo Styles */
+        .demo-pics {
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .demo-pics img {
+            width: 30%; /* Ensures images are evenly spaced */
+            height: 100%;
+            object-fit: contain; /* Maintains aspect ratio without distortion */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="header">
+                <a href="index.html"><img src="images/paper.png" alt="Logo"></a>
+                <h1>Papers</h1>
+            </div>
+            <ul>
+                <li><a onclick="loadProject('project1')">NEUR-LOOP</a></li>
+                <li><a>...</a></li>
+                <!-- Add more projects as needed -->
+            </ul>
+        </aside>
+        <main class="content" id="content">
+            <section id="project1">
+                <h1 >NEUR-LOOP</h1>
+                <h2 class="heading">Description: </h2>
+                <p>&nbsp;&nbsp;&nbsp;This research paper explores the intersection of Reinforcement Learning (RL) and neural signals, investigating how brain-inspired AI models can enhance our understanding of decision-making processes. The study examines how neural activity correlates with RL-driven behaviors, analyzing patterns in reward-based learning and adaptation. By leveraging computational models and neuroscience data, the paper provides insights into how RL principles can be applied to interpret neural dynamics, potentially contributing to advancements in AI-driven brain-computer interfaces and cognitive neuroscience. </p>
+
+                <h2 class="heading">Link: </h2>
+                <a href="#">NEUR-LOOP</a>
+            </section>
+
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Benson. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function loadProject(projectId) {
+            // Hide all project sections
+            const sections = document.querySelectorAll('.content section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected project
+            const selectedProject = document.getElementById(projectId);
+            if (selectedProject) {
+                selectedProject.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
